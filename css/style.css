@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======================================= */
+
+header {
+    height: 100vh;
+    animation: animate 20s ease-in-out infinite; 
+    background-size:cover;
+
+}
+
+.banner{
+    
+    height: 100vh;
+    background-color: #73a06580;
+}
+
+@keyframes animate {
+    0%,100%{
+        background-image: url(../assets/bg/agriculture-1867212_1280_11zon.jpg);
+    }
+    25%{
+        background-image: url(../assets/bg/countryside-1868781_1280_11zon.jpg);
+    }
+    50%{
+        background-image: url(../assets/bg/countryside-2326787_1280_11zon.jpg);
+    }
+    75%{
+        background-image: url(../assets/bg/field-213364_1280_11zon.jpg);
+    }
+}
+
+.navigation {
+    background-color: #fff;
+    height: 80px;
+    box-shadow: 0 1px 3px #666;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    float: left;
+    margin: 8px 40px 0;
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 27px 7px;
+}
+
+nav ul li a {
+    color: #333;
+    display: block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+nav ul ul {
+    padding: 0;
+    margin-top: 20px;
+    position: absolute;
+    display: none;
+    box-shadow: 1px 1px 4px #333;
+    border: 1px solid #333;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 200px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+nav ul ul li a {
+    border-radius: 0;
+    margin: 1px;
+    padding: 5px 5px 5px 10px;
+}
+
+hr {
+    height: 3px;
+    background-color: #333;
+}
+
+nav ul li a:hover, nav ul ul li a:hover {
+    background-color: #56A145;
+    color: #fff;
+}
+
+.languages {
+    float: right;
+    background-color: #56A145;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 27px 25px 0 10px;
+}
+
+.languages a {
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px 10px;
+    color: #fff;
+}
+
+/* ======================================== */
+.head-content {
+    position: relative;
+    top: 150px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #111;
+}
+
+.head-box-1 h1 {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.head-box-1 strong {
+    display: block;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.head-box-1 img {
+    margin-top: 30px;
+    width: 370px;
+}
+
+.head-box-2 {
+    text-align: center;
+}
+
+.mobile {
+    width: 400px;
+}
+
+/* ======================================== */
+
+.counter {
+    margin-top: 70px;
+}
+
+.counter-box table {
+    margin: auto;
+    width: 96%;
+    box-shadow: 5px 5px 20px #56A145;
+    border-radius:15px;
+}
+
+.counter-box table span {
+    display: inline-block;
+    padding: 10px 0 0 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.counter-box table p{
+    display: inline-block;
+    padding: 10px 10px 20px 20px;
+    font-size: 16px;
+}
+/* ========================================== */
+.info {
+    margin-top: 50px;
+}
+
+.info img {
+    width: 450px;
+}
+
+.info-icon {
+    height: 150px;
+    margin-top: 30px;
+}
+
+.info h4{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.info p{
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 22px;
+}
+
+.info span{
+    display: block;
+    font-weight: bold;
+    color: #56A145;
+    font-size: 24px;
+    margin: 20px 0 0 10px;
+}
+
+.info-icon, .info-text{
+    margin-left: 40px;
+}
+/* .ab2 .info-icon, .ab2 .info-text{
+    margin-left: 40px;
+} */
+/* ========================================== */
+.blog-hr {
+    background-color: #333;
+    height: 3px;
+    margin: 70px 0 0;
+}
+
+.blog-head {
+    margin-top: 20px;
+}
+
+.blog-head h3 {
+    font-size: 30px;
+}
+
+.blog-head a{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bolder;
+    float: right;
+}
+
+.blog-box {
+    width: 90%;
+    margin: 40px auto 0;
+    box-shadow: 2px 2px 10px #56A145;
+}
+
+.blog-box a{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bolder;
+}
+
+.blog-box p{
+    display: block;
+    margin: 10px 10px 0;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-img {
+    width: 100%;
+}
+
+.blog-box a:hover, .blog-head a:hover {
+    color: #56A145;
+}
+
+.blog-hr-down {
+    background-color: #333;
+    height: 3px;
+    margin: 40px 0 0;
+}
+
+
+
+/* ========================================== */
+footer {
+    margin-top: 40px;
+    height: 200px;
+    background-color: skyblue;
+}
+
+
+/* ========================================== */
+.icon-box {
+    margin:15px 0 0 15px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(233, 229, 229);
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px gray;
+
+}
+.fa-language, .fa-users, .fa-connectdevelop {
+    font-size: 45px;
+    color: #56A145;
+    padding: 18px 12px;
+}
+
+.fa-home {
+    font-size: 48px;
+    color: #56A145;
+    padding: 15px 13px;
+}
+
+.fa-hand-point-up, .fa-book-open, .fa-rupee-sign, .fa-money-bill-alt, .fa-book, .fa-brain, .fa-shield-alt {
+    font-size: 60px;
+    color: #56A145;
+    padding: 15px 0 0  10px;
+}
+
+
+/*.a {
+    border: 2px solid;
+}*/
+/*
+
+.b {
+    border: 2px solid;
+}
+.ab {
+    border: 2px solid;
+    background-color: red;
+    height: 50px;
+}
+*/
+
+/* .bb {
+    margin-top: 10px;
+}  */
+
+.col-5, .col-7 {
+    /* border: 2px solid; */
+    box-shadow: 1px 1px 10px #56A145;
+    margin-top: 40px;
+    border-radius: 15px;
+}
